@@ -9,18 +9,21 @@ import { ProfileComponent } from './profile/profile.component';
 import { ProfileService } from './profile.service';
 //import { HttpClient } from 'selenium-webdriver/http';  
 import { HttpClientModule } from '@angular/common/http'
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProfileComponent
+    ProfileComponent,
+    
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule
     
   ],
   exports:[
