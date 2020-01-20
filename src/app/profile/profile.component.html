@@ -1,10 +1,12 @@
 <div>
+    <div class="title">
         <h1>GIT SEARCH</h1>
-
+    </div>
+<br>
         <form class="search-form"  action="" >
             <div class="form-group">
               <input  type="text"  class="form-control" placeholder="search github user"
-              [(ngModel)]="username" name="username" (keyup)="findProfile()" >
+              ngModel="username" name="username" (keyup)="findProfile()">
             </div>
           
           </form>
@@ -32,10 +34,9 @@
                 </div>
                 <div class="col-sm-4">
                     <p>
-                            <span class="btn btn-success btn-sm">{{profile.followers}} Followers</span>
-                            <span class="btn btn-success btn-sm">{{profile.following}} following</span>
-                            <span class="btn btn-warning btn-sm">{{profile.public_gist}} public_gist</span>
-                            <span class="btn btn-warning btn-sm">{{profile.public_repos}} public_repos</span>
+                            <span class="btn btn-success btn-sm">{{profile.followers}} Followers</span> &nbsp;
+                            <span class="btn btn-success btn-sm">{{profile.following}} following</span> &nbsp; 
+                            <span class="btn btn-warning btn-sm">{{profile.public_repos}} public_repos</span> &nbsp;
                     </p>
                     <p><a href="profile.html_url" class="btn btn-success btn-sm" target="_blank">View profile on Github</a></p>
 
