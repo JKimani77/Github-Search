@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-//import { HttpClient, Headers } from '@angular/http';
+//import { Http, Headers } from '@angular/http';
 import 'rxjs/add/operator/map';
-import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
+import { HttpClient } from '@angular/common/http';
 
 
 @Injectable({
@@ -10,9 +10,9 @@ import { environment } from 'src/environments/environment';
 })
 export class ProfileService {
 
-  private username:string;
+  username:string;
  
-  constructor(private http:HttpClient) { 
+  constructor( private http:HttpClient) { 
     console.log("Service ready")
     this.username = 'OLAF';
   }
@@ -30,6 +30,6 @@ export class ProfileService {
   }
 
   updateProfile(username:string){
-    this.username=username
+    this.username=username;
   }
 }
