@@ -1,5 +1,9 @@
+.body{
+background-image: url('../../assets/wall.jpg');
+}
+
 .title{
-    background-color: rgb(109, 117, 105);
+    background-color: rgb(156, 156, 70);
      
     
 }
@@ -10,10 +14,15 @@ font-family: 'Courier New', Courier, monospace;
 text-align: center;
 }
 
+h4{
+    font-size: 60px;
+    
+}
+
 
 
 #userinformation{
-    background-color:rgb(156, 156, 108);
+    background-color:rgb(156, 156, 100);
 }
 
 .float-centre{
