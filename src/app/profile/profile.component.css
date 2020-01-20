@@ -1,5 +1,5 @@
 .title{
-    background-color: gray;
+    background-color: rgb(109, 117, 105);
      
     
 }
@@ -13,5 +13,11 @@ text-align: center;
 
 
 #userinformation{
-    background-color: aqua;
+    background-color:rgb(156, 156, 108);
+}
+
+.float-centre{
+    padding-top: 10px;
+    scroll-padding-left: 10px;
+    padding-right: 10px;
 }
